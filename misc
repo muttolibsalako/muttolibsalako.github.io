@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the  Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<html lang="en">
+<head>
+    <title>Jakob Brounstein</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching">Teaching</a></li>  
+                <li><a style="color:#e01709" href="misc">Non-econ miscellanea</a></li> 
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Publications -->
+            <div class="col-md-8" style="min-height: 100vh; height: auto;">    
+                <h2 id="publications">Non-econ miscellanea</h2>
+            
+                <strong>Select jazz composition charts </strong><br/>
+                <ul>
+                <li class="paper">
+                    Envelope. 2021. [<a href="/files/music/Envelope.pdf" target="_blank">Lead sheet</a>]
+                </li>
+                <li class="paper">
+                    Alone in a breeze. 2020. [<a href="/files/music/brounstein_aloneinabreeze.pdf" target="_blank">Lead sheet</a>]
+                </li>
+                <li class="paper">
+                    Light gray. 2019. [<a href="/files/music/light_gray.pdf" target="_blank">Lead sheet</a>]
+                </li>
+                </ul>
+
+                <!--
+                <strong>In the classical idiom</strong><br/>
+                <ul>
+                <li class="paper">
+                    Menuet pour un pauvre enfant térrible. 2020. [<a href="/files/music/menuet_pour_un_enfant_terrible_brounstein_final.pdf" target="_blank">Sheet music</a>]
+                </li>
+                </ul>
+                -->
+                <br><br>
+              
+           <!-- Links on the Sidebar -->
+            <div class="col-md-4" style="margin-top:2%">
+              <!-- <dd><a href="#">Google Scholar</a></dd> -->
+                <dd><a href="https://twitter.com/jakobbrounstein">Twitter</a></dd>
+                <br>
+                <dd><a href="/files/brounstein_cv_nov2020.pdf">CV (updated fall 2020)</a></dd>
+		 
+              <!-- <dd><a href="#">LinkedIn</a></dd> -->
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Other people may like it too! -->
+    <a style="color:#868d96;font-size:0.9em; float:right;" href="https://github.com/mavroudisv/plain-academic" target="_blank">Design courtesy of Vasilios Mavroudis: Plain Academic &emsp;</a><br>
+    
+</body>
+
+
+</html>
