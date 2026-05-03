@@ -51,9 +51,9 @@ a:focus-visible {
 }
 
 .site-header {
-  width: min(1040px, calc(100% - 40px));
+  width: min(1000px, calc(100% - 40px));
   margin: 0 auto;
-  padding: 22px 0;
+  padding: 12px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -61,48 +61,55 @@ a:focus-visible {
   border-bottom: 1px solid var(--line);
 }
 
-.brand {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 1.18rem;
-  font-weight: 700;
-  color: var(--ink);
-  text-decoration: none;
-}
-
 .site-nav {
   display: flex;
-  gap: 4px;
+  gap: 18px;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
 
 .site-nav a {
-  padding: 8px 10px;
+  padding: 6px 0;
   color: var(--muted);
   text-decoration: none;
-  border-radius: 999px;
-  transition: color 160ms ease, background 160ms ease;
+  transition: color 160ms ease;
 }
 
 .site-nav a:hover,
 .site-nav a:focus-visible,
 .site-nav a.active {
   color: var(--accent-dark);
-  background: var(--accent-soft);
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.header-icons a {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.header-icons a:hover,
+.header-icons a:focus-visible {
+  color: var(--accent-dark);
 }
 
 main {
-  width: min(1040px, calc(100% - 40px));
+  width: min(1000px, calc(100% - 40px));
   margin: 0 auto;
 }
 
 .hero {
-  min-height: 70vh;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(250px, 340px);
-  gap: clamp(34px, 7vw, 88px);
-  align-items: center;
-  padding: clamp(46px, 7vw, 88px) 0 58px;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: clamp(34px, 7vw, 84px);
+  align-items: start;
+  padding: 38px 0 46px;
 }
 
 .eyebrow,
@@ -134,7 +141,7 @@ h3 {
 h1 {
   max-width: 760px;
   margin: 0;
-  font-size: clamp(3rem, 6vw, 5.4rem);
+  font-size: clamp(2.3rem, 4.5vw, 3.2rem);
 }
 
 h2 {
@@ -154,36 +161,22 @@ h3 {
   color: #3e4750;
 }
 
-.icon-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 24px;
-}
-
-.icon-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 42px;
-  min-height: 42px;
-  padding: 0 10px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--panel);
-  color: var(--accent-dark);
-  font-size: 0.82rem;
+.profile-title {
+  margin: 8px 0 24px;
+  color: #4d6095;
+  font-size: 0.88rem;
   font-weight: 800;
-  text-decoration: none;
-  box-shadow: 0 8px 20px rgba(32, 36, 42, 0.05);
-  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
 }
 
-.icon-links a:hover,
-.icon-links a:focus-visible {
-  transform: translateY(-2px);
-  border-color: var(--accent);
-  background: var(--accent-soft);
+.bio-copy {
+  max-width: 650px;
+}
+
+.bio-copy p {
+  margin: 0 0 16px;
+  color: var(--ink);
 }
 
 .actions {
@@ -200,7 +193,7 @@ h3 {
   min-height: 44px;
   padding: 10px 16px;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 4px;
   color: var(--ink);
   background: var(--panel);
   text-decoration: none;
@@ -217,14 +210,14 @@ h3 {
 
 .button.primary {
   color: #fff;
-  background: var(--accent-dark);
-  border-color: var(--accent-dark);
+  background: #3f4c7f;
+  border-color: #3f4c7f;
 }
 
 .portrait {
   margin: 0;
   justify-self: end;
-  width: min(100%, 320px);
+  width: min(100%, 260px);
 }
 
 .portrait img {
@@ -232,63 +225,61 @@ h3 {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 50%;
-  border: 8px solid #fff;
-  box-shadow: var(--shadow);
+  border-radius: 7px;
 }
 
-.intro-grid {
+.profile-details {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(250px, 0.42fr);
-  gap: clamp(28px, 5vw, 64px);
-  padding: 54px 0;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: clamp(34px, 7vw, 84px);
+  padding: 30px 0 58px;
   border-top: 1px solid var(--line);
 }
 
-.intro-grid p {
-  max-width: 760px;
+.profile-details h2 {
+  margin: 0 0 18px;
+  color: var(--ink);
+  font-family: "Source Sans 3", Georgia, serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.dash-list {
+  list-style: none;
   margin: 0;
-  color: #3e4750;
+  padding: 0;
 }
 
-.contact-panel {
-  padding: 22px;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-top: 4px solid var(--accent);
-  box-shadow: 0 10px 30px rgba(32, 36, 42, 0.05);
+.dash-list li {
+  position: relative;
+  margin: 0 0 8px;
+  padding-left: 24px;
 }
 
-.contact-panel p {
-  margin: 0 0 12px;
-  overflow-wrap: anywhere;
+.dash-list li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  color: #4d6095;
 }
 
-.contact-panel a + a {
-  margin-left: 12px;
+.education-item {
+  margin: 0 0 14px;
 }
 
-.focus-band {
-  margin-bottom: 72px;
-  padding: 34px 0;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.focus-list {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.focus-list p {
+.education-item h3 {
   margin: 0;
-  padding: 12px 14px;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent-dark);
-  font-weight: 700;
-  text-align: center;
+  font-family: "Source Sans 3", Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.education-item p {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
 }
 
 .page-shell {
@@ -352,7 +343,7 @@ h3 {
 }
 
 .site-footer {
-  width: min(1040px, calc(100% - 40px));
+  width: min(1000px, calc(100% - 40px));
   margin: 0 auto;
   padding: 30px 0 38px;
   color: var(--muted);
@@ -382,33 +373,23 @@ h3 {
     font-size: 17px;
   }
 
-  .site-header,
   .hero,
-  .intro-grid {
+  .profile-details {
     display: block;
   }
 
   .site-nav {
     justify-content: flex-start;
-    margin-top: 16px;
   }
 
   .portrait {
     width: 100%;
-    max-width: 260px;
+    max-width: 240px;
     margin: 38px auto 0 0;
   }
 
-  .intro-grid {
-    padding: 46px 0;
-  }
-
-  .contact-panel {
-    margin-top: 28px;
-  }
-
-  .focus-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .profile-details > div + div {
+    margin-top: 30px;
   }
 }
 
@@ -417,7 +398,7 @@ h3 {
   .page-shell,
   .site-header,
   .site-footer {
-    width: min(calc(100% - 28px), 1040px);
+    width: min(calc(100% - 28px), 1000px);
   }
 
   h1 {
@@ -431,9 +412,5 @@ h3 {
 
   .actions {
     display: grid;
-  }
-
-  .focus-list {
-    grid-template-columns: 1fr;
   }
 }
