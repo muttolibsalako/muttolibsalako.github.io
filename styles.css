@@ -259,12 +259,12 @@ h3 {
 }
 
 .profile-details h2 {
-  margin: 0 0 12px;
+  margin: 0 0 14px;
   color: var(--ink);
   font-family: "Source Sans 3", Georgia, serif;
-  font-size: 0.85rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
 }
 
@@ -332,7 +332,10 @@ h3 {
 
 .section-heading {
   margin: 0 0 20px;
-  font-size: clamp(1.9rem, 3.2vw, 2.75rem);
+  color: var(--accent-dark);
+  font-family: "Source Sans 3", Georgia, serif;
+  font-size: clamp(1.45rem, 2.4vw, 1.95rem);
+  font-weight: 750;
 }
 
 .section-note {
@@ -342,7 +345,10 @@ h3 {
 }
 
 .research-section h2 {
-  font-size: clamp(1.6rem, 2.5vw, 2.15rem);
+  color: var(--accent-dark);
+  font-family: "Source Sans 3", Georgia, serif;
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  font-weight: 750;
 }
 
 .paper {
@@ -364,6 +370,12 @@ h3 {
   display: block;
   margin-top: 4px;
   color: var(--muted);
+  font-size: 0.92rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.45;
+  text-transform: none;
 }
 
 .paper summary {
@@ -391,10 +403,10 @@ h3 {
 }
 
 .paper-title {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: clamp(1.18rem, 1.7vw, 1.45rem);
-  font-weight: 700;
-  line-height: 1.2;
+  font-family: "Source Sans 3", Georgia, serif;
+  font-size: clamp(1.08rem, 1.5vw, 1.28rem);
+  font-weight: 400;
+  line-height: 1.35;
   color: var(--ink);
 }
 
