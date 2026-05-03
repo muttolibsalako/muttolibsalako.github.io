@@ -1,3 +1,3 @@
 # muttolibsalako.github.io
 
-Personal academic website for Abdulmuttolib B. Salako.
+Personal academic website for Abdulmuttolib Salako.
