@@ -84,19 +84,36 @@ a:focus-visible {
 .header-icons {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 12px;
 }
 
 .header-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   color: var(--muted);
-  font-size: 0.82rem;
-  font-weight: 800;
   text-decoration: none;
+  transition: background 160ms ease, color 160ms ease, transform 160ms ease;
 }
 
 .header-icons a:hover,
 .header-icons a:focus-visible {
   color: var(--accent-dark);
+  background: var(--accent-soft);
+  transform: translateY(-1px);
+}
+
+.header-icons svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
 }
 
 main {
@@ -162,11 +179,15 @@ h3 {
 }
 
 .profile-title {
-  margin: 8px 0 24px;
-  color: #4d6095;
+  display: inline-block;
+  margin: 10px 0 24px;
+  padding: 5px 10px;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-dark);
   font-size: 0.88rem;
   font-weight: 800;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
